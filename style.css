@@ -1,0 +1,12 @@
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.players{
+    grid-column: span 9;
+}
+.select-budget{
+    grid-column: span 3;
+}

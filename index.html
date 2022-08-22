@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPL Player Selection</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-black h-auto text-center">
+        <h1 class="text-amber-500 text-7xl pt-36 font-bold">BPL Player Selection</h1>
+        <p class="text-rose-400 pt-8 pb-32	">Bangladesh Premier League  all teams player list has been published.<br> BPL teams squad for all teams. Here  all the player’s lists.<br> Select your best five player</p>
+        </header>
+
+        <!--   Player selection part   -->
+
+      <main class="bg-gray-900 pb-12">
+        <section class="main-section w-9/12 mx-auto  pt-20">
+            
+                <div class=" players grid grid-cols-3 gap-4  ">
+                                        <!-- Player-1 -->
+                         <div class="card w-100 bg-black border-2	rounded-none ">
+                            <figure class=" ">
+                              <img src="image/shakib-e-25-1508938990.jpg" alt="Shoes" class="w-full h-72"/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-white text-3xl">Sakib Al Hasan</h2>
+                              <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                              <div class="card-actions">
+                                <button class="btn btn-primary rounded-none text-xl px-32 " onclick="addToSelect(this)">Select</button>
+                              </div>
+                            </div>
+                          </div>
+
+                                            <!-- Player-2 -->
+                            <div class="card w-100 bg-black border-2	rounded-none ">
+                                <figure class=" ">
+                                  <img src="image/mashrafe-mortaza-afp_806x605_41491328322.jpg" alt="Shoes" class="w-full h-72"/>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title text-white text-3xl">Mashrafe Mortaza</h2>
+                                  <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-primary rounded-none text-xl px-32" onclick="addToSelect(this)" >Select</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                                                <!-- Player-3 -->
+                              <div class="card w-100 bg-black border-2	rounded-none ">
+                                <figure class=" ">
+                                  <img src="image/Liton-Das-1.jpg" alt="Shoes" class="w-full h-72"/>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title text-white text-3xl">Litton Das</h2>
+                                  <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-primary rounded-none text-xl px-32" onclick="addToSelect(this)">Select</button>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                                                
+
+                                                <!-- Player-4 -->
+                              <div class="card w-100 bg-black border-2	rounded-none ">
+                                <figure class=" ">
+                                  <img src="image/mushfiqurrahimcropped_xzm8rkemyczm1gd6g8p6nuqrz.jpg" alt="Shoes" class="w-full h-72"/>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title text-white text-3xl">Mushfiqur Rahim</h2>
+                                  <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-primary rounded-none text-xl px-32" onclick="addToSelect(this)">Select</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                                                 <!-- Player-5 -->
+                              <div class="card w-100 bg-black border-2	rounded-none ">
+                                <figure class=" ">
+                                  <img src="image/tamimiqbal-cropped_1wswrbx3fizpz1c5yid9yhp06x.jpg" alt="Shoes" class="w-full h-72"/>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title text-white text-3xl">Tamim Iqbal</h2>
+                                  <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-primary rounded-none text-xl px-32" onclick="addToSelect(this)">Select</button>
+                                  </div>
+                                </div>
+                              </div>
+                                                <!-- Player-6 -->
+                                <div class="card w-100 bg-black border-2	rounded-none ">
+                                    <figure class=" ">
+                                        <img src="image/Taskin-Ahmed.jpg" alt="Shoes" class="w-full h-72"/>
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title text-white text-3xl">Taskin Ahmed</h2>
+                                        <p class="text-slate-400	">36 Goals . 120 Assist</p>
+                                        <div class="card-actions">
+                                        <button class="btn btn-primary rounded-none text-xl px-32" onclick="addToSelect(this)">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                           
+              </div>
+
+
+              <div class="select-budget grid grid-cols-1 gap-4">
+
+                            <!-- selected part -->
+                <div class="card w-100 bg-black pb-16 rounded-none ">
+                                
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-white text-3xl">Selected-5</h2>
+                     </div>
+                  </div>
+
+                                <!-- budget part -->
+                  <div class="card w-100 bg-black 	rounded-none ">
+                                        
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-white text-3xl ">Budget</h2>
+                      
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-none text-xl px-32">Select</button>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+
+
+                        
+        </section>
+      </main>
+<script src="js/select.js"></script>
+</body>
+</html>
+
+        
+  
