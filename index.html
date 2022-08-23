@@ -151,7 +151,7 @@
                       <form>
                         <label class=" ">
                          <span class="text-xl text-white">Per Player:</span>
-                          <input class=" w-24  border-light-200 placeholder-slate-400 " type="number" id="input-per-cost"/>
+                          <input class=" w-24  border-light-200 placeholder-slate-400 " type="text" id="input-per-cost"/>
                           
                         </label>
                       </form>
@@ -163,13 +163,13 @@
 
 
                       <div class="">
-                        <h1 class="text-xl text-white ">Player Expenses  $<span id="totalExpenses">0</span></h1>
+                        <h1 class="text-xl text-white ">Player Expenses  $<span id="playerExpenses">0</span></h1>
                       </div>
 
                       <form>
                         <label class=" ">
                          <span class="text-xl text-white">Manager:</span>
-                          <input class=" w-24  border-slate-200 placeholder-slate-400 "/>
+                          <input class=" w-24  border-slate-200 placeholder-slate-400 " id="input-manager"/>
                           
                         </label>
                       </form>
@@ -178,17 +178,23 @@
                       <form>
                         <label class=" ">
                          <span class="text-xl text-white">Coach:</span>
-                          <input class=" w-24  border-slate-200 placeholder-slate-400 "/>
+                          <input class=" w-24  border-slate-200 placeholder-slate-400 " id="input-coach"/>
                           
                         </label>
                       </form>
 
 
                       <div class="card-actions">
-                        <button class="btn btn-primary rounded-none text-xl mt-8">Calculate Total</button>
+                        <button class="btn btn-primary rounded-none text-xl mt-8" id="btn-calculate-total">Calculate Total</button>
+                      </div>
+                      
+                      <div class="">
+                        <h1 class="text-xl text-white mt-8 ">Total  $<span id="total-cost">0</span></h1>
                       </div>
 
                     </div>
+
+                    
                   </div>
 
               </div>

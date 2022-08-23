@@ -55,12 +55,31 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const inputPerCost = document.getElementById('input-per-cost');
     const perCost = inputPerCost.value ;
     const totalAddedPlayer = playerArray.length;
-    const totalCost = perCost * totalAddedPlayer;
+    const totalPlayerCost = perCost * totalAddedPlayer;
     
 
-    const totalExpensesId = document.getElementById('totalExpenses');
-    const totalExpenses = totalExpensesId.innerText ;
-    console.log(totalExpenses) 
+    const playerExpensesId = document.getElementById('playerExpenses');
+    const playerExpenses = playerExpensesId.innerText ;
+    playerExpensesId.innerText = totalPlayerCost ;
+
+
+
+
+document.getElementById('btn-calculate-total').addEventListener('click', function(){
+
+    const inputManger = document.getElementById('input-manager');
+    const managerCost = inputManger.value;
+    
+    const inputCoach = document.getElementById('input-coach');
+    const coachCost = inputCoach.value ;
+
+    const totalCostString = parseInt(totalPlayerCost) +parseInt(managerCost)  +parseInt(coachCost)  ;
+    const totalCost = parseInt(totalCostString);
+
+    const costTotal = document.getElementById('total-cost');
+    const total = costTotal.innerText ;
+
+    costTotal.innerText = totalCost  ;
 
 })
-
+})
