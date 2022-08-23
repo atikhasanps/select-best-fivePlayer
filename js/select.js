@@ -23,7 +23,7 @@ function displayPlayer(selectPlayer) {
             playerListbody.appendChild(tr);
         }
         else{
-            alert('hello')
+            alert('Already added Five Player. You cant add more.')
         }
     }
 }
@@ -44,3 +44,23 @@ function addToSelect(element){
     
     displayPlayer(playerArray);
 }
+
+
+
+
+
+//                <------- Budget Part------->
+
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    const inputPerCost = document.getElementById('input-per-cost');
+    const perCost = inputPerCost.value ;
+    const totalAddedPlayer = playerArray.length;
+    const totalCost = perCost * totalAddedPlayer;
+    
+
+    const totalExpensesId = document.getElementById('totalExpenses');
+    const totalExpenses = totalExpensesId.innerText ;
+    console.log(totalExpenses) 
+
+})
+

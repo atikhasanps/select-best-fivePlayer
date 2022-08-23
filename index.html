@@ -145,15 +145,54 @@
                   <div class="card w-100 bg-black 	rounded-none ">
                                         
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title text-white text-3xl ">Budget</h2>
-                      
+                      <h2 class="card-title text-white text-3xl pb-6">Budget</h2>
+
+
+                      <form>
+                        <label class=" ">
+                         <span class="text-xl text-white">Per Player:</span>
+                          <input class=" w-24  border-light-200 placeholder-slate-400 " type="number" id="input-per-cost"/>
+                          
+                        </label>
+                      </form>
+
+
                       <div class="card-actions">
-                        <button class="btn btn-primary rounded-none text-xl px-32">Select</button>
+                        <button class="btn btn-primary rounded-none text-xl mt-8 mb-8" id="btn-calculate">Calculate</button>
                       </div>
+
+
+                      <div class="">
+                        <h1 class="text-xl text-white ">Player Expenses  $<span id="totalExpenses">0</span></h1>
+                      </div>
+
+                      <form>
+                        <label class=" ">
+                         <span class="text-xl text-white">Manager:</span>
+                          <input class=" w-24  border-slate-200 placeholder-slate-400 "/>
+                          
+                        </label>
+                      </form>
+
+
+                      <form>
+                        <label class=" ">
+                         <span class="text-xl text-white">Coach:</span>
+                          <input class=" w-24  border-slate-200 placeholder-slate-400 "/>
+                          
+                        </label>
+                      </form>
+
+
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-none text-xl mt-8">Calculate Total</button>
+                      </div>
+
                     </div>
                   </div>
 
               </div>
+
 
 
                         
